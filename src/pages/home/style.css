@@ -1,0 +1,70 @@
+.intro {
+    padding: 8rem 0;
+}
+
+.intro .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: .8rem;
+}
+
+.intro .display-2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.intro .lead .btn {
+    margin-right: 1rem;
+    border-radius: 1.25rem
+}
+
+.productExplain {
+    background: #ccc;
+}
+
+.productExplain .display-2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.productExplain a {
+    cursor: pointer;
+}
+
+.productExplain .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: .8rem;
+}
+
+.productExplain .lead .btn {
+    margin-right: 1rem;
+    border-radius: .25rem
+}
+
+.productExplain .nav-tabs {
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.productExplain .nav-tabs .nav-link {
+    font-size: .8rem;
+    border-radius: 1.25rem;
+    margin-right: .5rem;
+}
+
+.productExplain .nav-tabs .nav-item.show .nav-link, .productExplain .nav-tabs .nav-link.active {
+    color: #ffffff;
+    border-color: #f42367;
+    background-color: #f42367;
+}
+
+.productExplain .tab-content {
+    margin-bottom: 1.5rem;
+}
+
+.productExplain .tab-pane p {
+    font-size: .8rem;
+}

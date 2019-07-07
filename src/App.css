@@ -31,3 +31,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Custom */
+@media (min-width: 1400px){
+  .container {
+      max-width: 1300px;
+  }
+}
+
+.btn-danger {
+  color: #ffffff;
+  border-color: #f42367;
+  background-color: #f42367;
+}
+
+.btn-outline-danger {
+  color: #f42367;
+  border-color: #f42367;
+}
+
+.btn-primary {
+  color: #ffffff;
+  border-color: #753492;
+  background-color: #753492;
+}
+
+.btn-outline-primary {
+  color: #753492;
+  border-color: #753492;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
