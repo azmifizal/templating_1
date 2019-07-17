@@ -94,15 +94,16 @@ const mainFooter = () => {
         </Container>
       </Jumbotron>
       <Container fluid className="copyright">
-        {/* <Row> */}
-        <Col sx="12">
-          <p style={{ marginBottom: 0 }}>
-            &copy; 2022 Theme by psdfreebies.com &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-            Privacy &nbsp;&nbsp;&bull;&nbsp;&nbsp; Terms of Use
-            &nbsp;&nbsp;&bull;&nbsp;&nbsp; Site Map
-          </p>
-        </Col>
-        {/* </Row> */}
+        <Row>
+          <Col sm="12">
+            <p style={{ marginBottom: 0 }}>
+              &copy; 2022 Theme by psdfreebies.com
+              &nbsp;&nbsp;&bull;&nbsp;&nbsp; Privacy
+              &nbsp;&nbsp;&bull;&nbsp;&nbsp; Terms of Use
+              &nbsp;&nbsp;&bull;&nbsp;&nbsp; Site Map
+            </p>
+          </Col>
+        </Row>
       </Container>
     </React.Fragment>
   );

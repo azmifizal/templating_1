@@ -171,5 +171,7 @@
 .copyright {
   text-align: center;
   background: #f6f6f6;
-  padding: 2rem 0;
+  /* padding: 2rem inherit; */
+  padding-top: 2.1rem;
+  padding-bottom: 2.1rem;
 }
