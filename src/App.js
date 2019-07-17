@@ -3,6 +3,7 @@ import "./App.css";
 
 import MainHeader from "./components/MainHeader";
 import MainContent from "./components/MainContent";
+import MainFooter from "./components/MainFooter";
 
 class App extends React.PureComponent {
   render() {
@@ -10,6 +11,7 @@ class App extends React.PureComponent {
       <React.Fragment>
         <MainHeader />
         <MainContent />
+        <MainFooter />
       </React.Fragment>
     );
   }

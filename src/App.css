@@ -1,3 +1,30 @@
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255, 1);
+}
+
+@media (max-width: 767px) {
+  .bg-none {
+    background: #252525;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -40,10 +67,27 @@
   }
 }
 
+.btn {
+  padding: .5rem 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .btn-danger {
+  font-size: .7rem;
   color: #ffffff;
+  border-radius: .45rem;
   border-color: #f42367;
   background-color: #f42367;
+  box-shadow: 0px 4px 1px 0px #ff7aa8;
+  -webkit-box-shadow: 0px 4px 1px 0px #ff7aa8;
+  -moz-box-shadow: 0px 4px 1px 0px #ff7aa8;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #ce1551;
+  border-color: #ce1551;
 }
 
 .btn-outline-danger {
@@ -52,9 +96,20 @@
 }
 
 .btn-primary {
+  font-size: .7rem;
   color: #ffffff;
+  border-radius: .45rem;
   border-color: #753492;
-  background-color: #753492;
+  background-color: #753492; 
+  box-shadow: 0px 4px 1px 0px #a881eb;
+  -webkit-box-shadow: 0px 4px 1px 0px #a881eb;
+  -moz-box-shadow: 0px 4px 1px 0px #a881eb;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #622080;
+  border-color: #622080;
 }
 
 .btn-outline-primary {
@@ -64,4 +119,57 @@
 
 .jumbotron {
   margin-bottom: 0;
+  border-radius: 0;
+}
+
+.footer {
+  background: #ffffff;
+  position: relative;
+}
+
+.footer .thumbImg {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.footer .point {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1199px) {
+  .footer .point {
+    margin-bottom: 1rem;
+  }
+}
+
+.footer .point h5 {
+  color: #622080;
+  margin-bottom: 1rem;
+}
+
+.footer .point ul {
+  list-style: none;
+  padding-left: .5rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.footer .mapImg {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+  .footer .mapImg {
+    display: none;
+  }
+}
+
+.copyright {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 2rem 0;
 }

@@ -5,9 +5,9 @@ import Home from "../pages/home";
 export default class MainContent extends React.Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Home />
-      </div>
+      </React.Fragment>
     );
   }
 }

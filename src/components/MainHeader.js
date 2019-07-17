@@ -25,8 +25,8 @@ export default class MainHeader extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
+      <React.Fragment>
+        <Navbar color="none" dark expand="md">
           <NavbarBrand href="/">BlueRex</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -55,7 +55,7 @@ export default class MainHeader extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -1,5 +1,20 @@
 .intro {
-    padding: 8rem 0;
+    background-image: url('../../assets/images/coworking.jpg');
+    padding: 11rem 0;
+    position: relative;
+    color: #ffffff;
+}
+
+.intro::before {
+    /* background-color: rgba(233, 30, 99, 0.73); */
+    background-image: linear-gradient(-130deg, rgba(117, 52, 146, .9), rgba(244, 35, 103, .9));
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .intro .lead {
@@ -15,20 +30,50 @@
 }
 
 .intro .lead .btn {
+    font-size: .7rem;
+    font-weight: 500;
+    padding: 0.6rem 2.2rem;
     margin-right: 1rem;
-    border-radius: 1.25rem
+    border-radius: 1.25rem;
+    -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.4);
+}
+
+.intro .programmerImg {
+    width: 80%;
+    display: block;
+    position: absolute;
+    bottom: -11rem;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .intro .programmerImg { 
+        display: none;
+    }
 }
 
 .productExplain {
-    background: #ccc;
+    background: #ffffff;
+    position: relative;
+}
+
+.productExplain .mapImg {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    height: auto;
 }
 
 .productExplain .display-2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 800;
+    margin-bottom: 2rem;
 }
 
-.productExplain a {
+.productExplain a, .recentWork a {
     cursor: pointer;
 }
 
@@ -36,7 +81,7 @@
     font-size: 1.25rem;
     font-weight: 300;
     font-style: italic;
-    margin-bottom: .8rem;
+    margin-bottom: 0;
 }
 
 .productExplain .lead .btn {
@@ -49,13 +94,14 @@
     margin-bottom: 1rem;
 }
 
-.productExplain .nav-tabs .nav-link {
+.productExplain .nav-tabs .nav-link, .recentWork .nav-tabs .nav-link {
     font-size: .8rem;
     border-radius: 1.25rem;
     margin-right: .5rem;
 }
 
-.productExplain .nav-tabs .nav-item.show .nav-link, .productExplain .nav-tabs .nav-link.active {
+.productExplain .nav-tabs .nav-item.show .nav-link, .productExplain .nav-tabs .nav-link.active, 
+.recentWork .nav-tabs .nav-item.show .nav-link, .recentWork .nav-tabs .nav-link.active {
     color: #ffffff;
     border-color: #f42367;
     background-color: #f42367;
@@ -67,4 +113,327 @@
 
 .productExplain .tab-pane p {
     font-size: .8rem;
+}
+
+.productExplain .phoneImg {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .productExplain .phoneImg { 
+        display: none;
+    }
+    .productExplain .mapImg { 
+        display: none;
+    }
+}
+
+.achievement {
+    background: #4a2d7f;
+    color: #ffffff;
+    text-align: center;
+}
+
+.achievement .jumbotron {
+    /* padding: 0 2rem; */
+    padding: 0;
+    background: transparent;
+}
+
+.achievement .jumbotron .motivate-point  {
+    padding: 4rem 4rem;
+}
+
+.achievement .jumbotron .purple {
+    background: #41286a;
+}
+
+@media (max-width: 567px) {
+    .achievement .jumbotron .motivate-point  {
+        padding: 2rem 2rem;
+    }
+}
+
+.achievement .jumbotron .motivate-point .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievement .jumbotron .motivate-point h2 {
+    font-weight: 800;
+}
+
+.achievement .jumbotron .motivate-point h5 {
+    font-weight: 700;
+    line-height: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+
+.achievement .jumbotron .motivate-point h5 small {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.achievement .jumbotron .motivate-point p {
+    font-size: .7rem;
+    color: #b6b6b6;
+    line-height: 1rem;
+    margin-bottom: 0;
+}
+
+.motivate {
+    background-image: url('../../assets/images/mac.jpg');
+    background-position: left;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.motivate::before {
+    background-color: rgb(65, 40, 106, .9);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.motivate .lead {
+    font-size: 2em;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.motivate .display-2 {
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+.graphicDesign {
+    background: #ffffff;
+}
+
+.graphicDesign .lead {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.graphicDesign .display-2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: .8rem;
+}
+
+.graphicDesign .desc {
+    font-size: .8rem;
+}
+
+.graphicDesign .icon {
+    font-size: 2.5rem;
+}
+
+.graphicDesign .card-dsign {
+    padding-bottom: 1rem;
+}
+
+.graphicDesign .card-point {
+    font-size: .7rem;
+    line-height: .9rem;
+}
+
+.graphicDesign .graphImg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.recentWork {
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.recentWork .display-2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+.recentWork .desc {
+    font-size: .8rem;
+}
+
+.recentWork .nav {
+    display: inline-flex;
+}
+
+.recentWork .img-thumb {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.recentWork .nav-tabs {
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.recentWork .tab-pane {
+    margin-bottom: 2.5rem;
+}
+
+.partner {
+    background: #4a2d7f;
+}
+
+.partner .img-partner {
+    width: 45%;
+    margin: 0 auto;
+    display: block;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+@media (max-width: 567px) {
+    .partner {
+        display: none;
+    }
+}
+
+.testimoni {
+    background: #444444;
+    color: #ffffff;
+}
+
+.testimoni .lead {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.testimoni .display-2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimoni .icon {
+    font-size: 1.8rem;
+    position: absolute;
+    color: #f42367;
+}
+
+.testimoni .desc {
+    font-size: .8rem;
+    font-style: italic;
+    margin-top: 3rem;
+    padding-left: 2rem;
+}
+
+.testimoni ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    padding-left: 0;
+    margin: 1.5rem 0 .3rem;
+}
+
+.testimoni ul li {
+    font-size: .8rem;
+    color: #f42367;
+    padding-right: .1rem;
+}
+
+.testimoni .usersImg {
+    width: 80%;
+    display: block;
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .testimoni .usersImg { 
+        display: none;
+    }
+}
+
+.contact {
+    text-align: center;
+    color: #ffffff;
+    background-image: url('../../assets/images/trianglify.png');
+    background-size: cover;
+    background-position: bottom right;
+    position: relative;
+}
+
+.contact::before {
+    background-color: rgba(255, 0, 47, 0.6);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact .display-2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.contact .desc {
+    font-size: .9rem;
+}
+
+.contact .input-contact {
+    background: rgba(225, 225, 225, .4);
+    border: none;
+    color: #ffffff;
+}
+
+.contact .input-contact::placeholder {
+    color: #ffffff;
+}
+
+.contact .btn-contact {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .contact .btn-contact {
+        width: 25%;
+    }
+}
+
+.social {
+    background: #4a2d7f;
+    text-align: center;
+}
+
+.social a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.social a::before {
+    content: "";
+    padding-left: 2rem;
+}
+
+.social a::after {
+    content: "";
+    padding-right: 2rem;
+    border-right: .1rem solid #63537d;
+}
+
+.social a:last-child::after {
+    content: "";
+    border-right: none;
 }
